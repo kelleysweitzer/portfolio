@@ -20,6 +20,80 @@
 
     <!-- Custom CSS -->
     <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+<style>
+.circle {
+  padding: 13px 20px;
+  border-radius: 50%;
+  background-color: #ecb807;
+  color: #ecb807;
+  max-height: 50px;
+  z-index: 2;
+  box-shadow: 3px 2px 3px #4A4C4C
+}
+
+.how-it-works.row .col-2 {
+  align-self: stretch;
+}
+.how-it-works.row .col-2::after {
+  content: "";
+  position: absolute;
+  border-left: 3px solid #ecb807;
+  z-index: 0;
+}
+.how-it-works.row .col-2.bottom::after {
+  height: 50%;
+  left: 50%;
+  top: 50%;
+}
+.how-it-works.row .col-2.full::after {
+  height: 100%;
+  left: calc(50% - 3px);
+}
+.how-it-works.row .col-2.top::after {
+  height: 50%;
+  left: 50%;
+  top: 0;
+}
+
+
+.timeline div {
+  padding: 0;
+  height: 40px;
+}
+.timeline hr {
+  border-top: 3px solid #ecb807;
+  margin: 0;
+  top: 17px;
+  position: relative;
+}
+.timeline .col-2 {
+  display: flex;
+  overflow: hidden;
+}
+.timeline .corner {
+  border: 3px solid #ecb807;
+  width: 100%;
+  position: relative;
+  border-radius: 15px;
+}
+.timeline .top-right {
+  left: 50%;
+  top: -50%;
+}
+.timeline .left-bottom {
+  left: -50%;
+  top: calc(50% - 3px);
+}
+.timeline .top-left {
+  left: -50%;
+  top: -50%;
+}
+.timeline .right-bottom {
+  left: 50%;
+  top: calc(50% - 3px);
+}
+
+</style>
 
   </head>
 
@@ -93,26 +167,78 @@
 
     <!-- Services -->
     <section class="content-section bg-primary text-white text-center" id="services">
-      <div class="container">
+      <!-- <div class="container"> -->
         <div class="content-section-heading">
           <h3 class="text-secondary mb-0">EXPERIENCE</h3>
           <h2 class="mb-5">Timeline</h2>
         </div>
-        <div class="row">
-          <div class="col-lg-3 col-md-2 mb-5 mb-lg-0">
-            <!-- <span><img class="img-fluid" src="img/me.jpg" alt="">
-            </span> -->
-          </div>
 
-          <div class="col-lg-9 col-md-10">
-            <!-- <span class="service-icon rounded-circle mx-auto mb-3">
-              <i class="icon-mustache"></i>
-            </span> -->
-            <h4>
-              <strong>EXPERIENCE</strong>
-            </h4>
+              <div class="container">
+                <h2 class="pb-3 pt-2 border-bottom mb-5"> </h2>
+                <!--first section-->
+                <div class="row align-items-center how-it-works d-flex">
+                  <div class="col-2 text-center bottom d-inline-flex justify-content-center align-items-center">
+                    <div class="circle font-weight-bold">1</div>
+                  </div>
+                  <div class="col-8 text-left">
+                    <h5>COMPUTER CONSULTANT I</h5>
+                    <p>UNIVERSITY OF MICHIGAN, <i>2018 - present</i></p>
+                    <p>I currently work at Instructional Support Services in the College of LS&A.
+                       For 10 hours a week, I handle requests and troubleshoot IT issues for faculty and students.
+                       During my time here, I have developed expertise in software including Camtasia, iMovie, Adobe Illustrator as well as instructional support devices. </p>
+                  </div>
+                </div>
+                <!--path between 1-2-->
+                <div class="row timeline">
+                  <div class="col-2">
+                    <div class="corner top-right"></div>
+                  </div>
+                  <div class="col-8">
+                    <hr/>
+                  </div>
+                  <div class="col-2">
+                    <div class="corner left-bottom"></div>
+                  </div>
+                </div>
+                <!--second section-->
+                <div class="row align-items-center justify-content-end how-it-works d-flex">
+                  <div class="col-8 text-right">
+                    <h5>INTERGROUP RELATIONS COUNCIL</h5>
+                    <p>MICHIGAN COMMUNITY SCHOLARS PROGRAM, <i> 2018 - present</i></p>
+                    <p> I love working with my team members to efficiently plan social justice dialogues, cultural events, and campus climate discussions
+                      for our community on a bi-weekly basis. Raising awareness about social justice issues is very important to me and I am glad to be able to do this
+                      with such a talented, hardworking team.</p>
+                  </div>
+                  <div class="col-2 text-left full d-inline-flex justify-content-center align-items-l">
+                    <div class="circle font-weight-bold">2</div>
+                  </div>
+                </div>
+                <!--path between 2-3-->
+                <div class="row timeline">
+                  <div class="col-2 ">
+                    <div class="corner right-bottom"></div>
+                  </div>
+                  <div class="col-8">
+                    <hr/>
+                  </div>
+                  <div class="col-2">
+                    <div class="corner top-left"></div>
+                  </div>
+                </div>
+                <!--third section-->
+                <div class="row align-items-center how-it-works d-flex">
+                  <div class="col-2 text-left top d-inline-flex justify-content-center align-items-center">
+                    <div class="circle font-weight-bold">3</div>
+                  </div>
+                  <div class="col-8 text-left">
+                    <h5>USER EXPERIENCE DESIGN CONSULTING</h5>
+                    <p>THE CITY OF ANN ARBOR, <i>May 2018</i></p>
+                    <p> Worked with the Customer Service sector of the City of Ann Arbor’s Public Works department.
+                      Collaborated with a team of UX design students to develop a plan to implement voice-activated software.</p>
+                    </div>
+                </div>
 
-      </div>
+            </div>
     </section>
 
     <!-- Callout -->
@@ -185,8 +311,16 @@
     <section class="content-section bg-primary text-white">
       <div class="container text-center">
         <h2 class="mb-4">Contact Me:</h2>
+        <form method="POST" action="https://formspree.io/kjsweitz@umich.edu">
+<input type="email" name="email" placeholder="Your email"><br>
+<textarea name="message" placeholder="Message"></textarea><br>
+<button type="submit">Send Test</button>
+</form>
+
+
 
       </div>
+
     </section>
 
     <!-- Map -->
