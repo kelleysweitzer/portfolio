@@ -31,7 +31,7 @@
       height: auto;
       padding-top: 9rem;
       padding-bottom: 8rem;
-      background-image: url("img/shuffle buddy.jpg");
+      background-image: url("img/shuffle buddylg.jpg");
       background-position: center center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -55,7 +55,7 @@
     /* Style the header */
     .header {
       padding: 10px 16px;
-      background: #555;
+      background: #bfbfbf;
       color: #f1f1f1;
     }
 
@@ -141,9 +141,20 @@
 
   <section class="content-section bg-primary text-white" id="core">
     <div class="container">
-        <h3 class="text-center">
-          The Core </h3>
-          <p> The initial part of our project involved implementing the back-end of the website and launching our website on <strong>Heroku,</strong>
+      <h3 class="text-center">
+        The Core </h3>
+      <div class="row">
+        <div class="col-md-1" align= "left">
+
+            <img src= "img/logos/github.png" height= "70 px">
+            <img src= "img/logos/flask.png" height= "70 px">
+            <img src= "img/logos/jinja.png" height= "70 px">
+            <img src= "img/logos/python.png" height= "70 px">
+            <img src= "img/logos/heroku.png" height= "70 px">
+        </div>
+        <div class="col-sm-11">
+
+            <p> The initial part of our project involved implementing the back-end of the website and launching our website on <strong>Heroku,</strong>
             an application hosting site.
             During this phase of the project, I learned how to use <strong>Git</strong> and <strong>GitHub</strong> to collaborate with my teammates on code. I really liked
             being able to explain my code contributions and tracking my and my group's progress. <br><br>
@@ -154,6 +165,8 @@
             the player's score and implemented a "clear score" function.<br><br>
             One of my favorite parts of this part of the project was discovering tons of new songs!
           </p><br>
+        </div>
+      </div>
 
     </div>
   </div>
@@ -162,10 +175,29 @@
     <div class="container">
         <h3 class="text-center">
           The Reach </h3>
-        <p>
+        <div class="row">
+          <div class="col-lg-10">
+              <p> After implementing the backend of the music quiz and the framework for the front end, we began to implement our final website using
+                <strong>Boostrap</strong> and custom <strong>CSS </strong>styling. We were tasked with making sure that our interface was fully responsive and would work on screens of
+                all sizes. My team and I really enjoyed creating a beautiful final product and we worked really hard to customize as many elements as possible.
+                <br><br>
+               In addition to front-end styling, we added a comprehensive custom playlist feature using <strong> Google Firebase. </strong>
+               Using Firebase, we were able to make a real-time cloud database of playlists created by users within our app. Users are also able to add songs to
+               existing playlists and delete playlists. I really liked this feature because I could personally tailor the game experience for myself or my friends.
+               <br><br>
+               We also utilized <strong> web-scraping using BeautifulSoup </strong> to embed YouTube videos for each question answered. This was another engaging
+               feature of Shuffle Buddy that helped me learn more about the structure of websites and how to change the data displayed on a HTML framework.
 
 
-        </p>
+
+
+                </p>
+          </div>
+          <div class="col-md-2" align="center">
+            <img src= "img/shuffle buddy mobile.png" height = "400px">
+          </div>
+
+
 
   </section>
 
