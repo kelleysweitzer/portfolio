@@ -337,6 +337,7 @@ a:hover, a:focus, a:active {
   border-color: #1D809F !important;
   color: #fff !important;
   transition: 1 !important;
+  border-radius: 3px !important;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {

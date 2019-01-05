@@ -21,49 +21,162 @@
     <!-- Custom CSS -->
     <link href="css/stylish-portfolio.min.css" rel="stylesheet">
 
-  </head>
+    <style>
+
+    .bg1{
+      min-height: 30rem;
+      position: relative;
+      display: table;
+      width: 100%;
+      height: auto;
+      padding-top: 9rem;
+      padding-bottom: 8rem;
+      background-image: url("img/Healthcare Design Challenge.jpg");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+        background-attachment: fixed;
+    }
+
+    .btn-secondary {
+      background-color: #ecb807 !important;
+      border-color: #ecb807 !important;
+      color: #000 !important;
+      font-size: 16pt;
+      transition: 0.3s ;
+      border-radius: 10px;
+    }
+
+    .btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
+      background-color: #ba9106 !important;
+      border-color: #ba9106 !important;
+}
+    /* Style the header */
+    .header {
+      padding: 10px 15px;
+      background: #555;
+      color: #f1f1f1;
+    }
+
+    /* Page content */
+    .content {
+      padding: 16px;
+    }
+
+    /* The sticky class is added to the header with JS when it reaches its scroll position */
+    .sticky {
+      z-index: 1000;
+      position: fixed;
+      top: 0;
+      width: 100%
+    }
+
+    /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+    .sticky + .content {
+      padding-top: 102px;
+    }
+    </style>
 
 
-  <header class="content-section bg-primary text-white">
-    <div class="container text-center">
+    </head>
+
+
+  <div class="header" id="myHeader">
+
+    <div class= "text-left">
+      <button class="btn-secondary" onclick="goBack()">Back</button>
+    </div>
+  </div>
+
+
+  <section class="content-section bg1">
+
+    <div class="container text-center text-white">
       <div class="container text-center my-auto">
-        <h2 class="mb-1">Healthcare Design Challenge</h2>
-        <p class="text-align-left">
+
+        <h1 class="mb-1">Healthcare Design Challenge</h1><br>
+        <p><font size="5.5">
           For this project, I was tasked with creating an interface that could be used by nurses and physicians
-          to document patient information in order to administer better care. <br>
-          I needed to include elements like current and past health, tobaco and alcohol use, family history, and immunizations.
-        </p>
+          to document patient information in order to administer better care.
+          My goal was to include elements like current and past health, tobaco and alcohol use, family history, and immunizations.
+        </p></font>
       </div>
     </div>
-  </header>
-
+  </section>
+<!--
   <section class="content-section bg-light" id="sketches">
     <div class="container">
         <h3 class="text-center">
           Sketches </h3>
-          <p> To prepare for my project, I made a variety of sketches to outline the flow of information
+          <p class= "text-left"> To prepare for my project, I made a variety of sketches to outline the flow of information
             and how the pages would be organized. I decided on having a single, long-form page for data entry,
             with two smaller pages for adding additional details to entries.
             </p>
 
     </div>
-  </section>
+  </section> -->
 
-  <section class="content-section bg-primary text-white" id="wireframing">
+  <section class="content-section bg-light " id="wireframing">
     <div class="container">
         <h3 class="text-center">
-          Wireframing </h3>
-          <p> After creating several rough sketches, I created 3 wireframes in Adobe Illustrator:
-            <list>
-              the data entry page, where the nurse would input information about the patient
-              the "edit information" page, where the nurse or physician could edit in detail existing entries about
-                specific health conditions or family history
-              the data presentation page, which would consolidate all of the newly entered data in a
-                readable way so that the physician could easily reference items.
+          Sketches & Wireframing </h3>
+          <p> I made a variety of sketches to outline the flow of information
+            and how the pages would be organized. I decided on having a single, long-form page for data entry,
+            with two smaller pages for adding additional details to entries.
+            <ul>
+              <li>the data entry page, where the nurse would input information about the patient</li>
+              <li>the "edit information" page, where the nurse or physician could edit in detail existing entries about
+                specific health conditions or family history</li>
+              <li>the data presentation page, which would consolidate all of the newly entered data in a
+                readable way so that the physician could easily reference items.</li>
 
-            </list>
+            </ul>
 
             </p>
 
     </div>
   </section>
+
+
+  <section class="content-section bg-primary  text-white" id="final">
+    <div class="container">
+        <h3 class="text-center">
+          High-Fidelity Mockups </h3>
+          <p> I created a rough style guide and a sample patient to make the high-fidelity mockups for this project. The annotations in the sidebar explain
+            in detail the functions of each element in the interface.
+
+          </p><br>
+          <div align="center">
+            <embed src="Epic UX Design Challenge.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" width="70%" height="450px">
+            <br><br>
+            <a href="Epic UX Design Challenge.pdf" download> <button class="btn-secondary js-scroll-trigger">Download File</button></a>
+    </div>
+  </div>
+
+
+  </section>
+
+  <script>
+    function goBack() {
+    window.history.back();
+  }
+
+  // When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the header
+var header = document.getElementById("myHeader");
+
+// Get the offset position of the navbar
+var sticky = header.offsetTop;
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+if (window.pageYOffset > sticky) {
+  header.classList.add("sticky");
+} else {
+  header.classList.remove("sticky");
+}
+}
+  </script>
