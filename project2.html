@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Kelley Sweitzer</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+
+    <style>
+
+    .bg1{
+      min-height: 30rem;
+      position: relative;
+      display: table;
+      width: 100%;
+      height: auto;
+      padding-top: 9rem;
+      padding-bottom: 8rem;
+      background-image: url("img/shuffle buddy.jpg");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+        background-attachment: fixed;
+    }
+
+    .btn-secondary {
+      background-color: #ecb807 !important;
+      border-color: #ecb807 !important;
+      font-size: 16pt;
+      color: #000 !important;
+      transition: 0.3s ;
+      border-radius: 10px;
+    }
+
+    .btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
+      background-color: #ba9106 !important;
+      border-color: #ba9106 !important;
+}
+    /* Style the header */
+    .header {
+      padding: 10px 16px;
+      background: #555;
+      color: #f1f1f1;
+    }
+
+    /* Page content */
+    .content {
+      padding: 16px;
+    }
+
+    /* The sticky class is added to the header with JS when it reaches its scroll position */
+    .sticky {
+      z-index: 1000;
+      position: fixed;
+      top: 0;
+      width: 100%
+    }
+
+    /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+    .sticky + .content {
+      padding-top: 102px;
+    }
+    </style>
+
+
+    </head>
+
+
+  <div class="header" id="myHeader">
+
+    <div class= "text-left" style="opacity:1">
+      <button class="btn-secondary" onclick="goBack()">Back</button>
+    </div>
+  </div>
+
+
+  <section class="content-section bg1">
+
+    <div class="container text-center text-white">
+      <div class="container text-center my-auto">
+
+        <h1 class="mb-1">SHUFFLE BUDDY</h1><br>
+        <p><font size="5.5">
+          For my final project in EECS 183: Elementary Programming Concepts, I made a super fun music quiz. <br>
+          Don't just take my word for it, play it for yourself!
+        </p></font>
+
+        <a href="https://shufflebuddy.herokuapp.com" target="_blank"><button class= "btn-secondary" >Play Shuffle Buddy!</button></a>
+      </div>
+    </div>
+  </section>
+<!--
+  <section class="content-section bg-light" id="sketches">
+    <div class="container">
+        <h3 class="text-center">
+          Sketches </h3>
+          <p class= "text-left"> To prepare for my project, I made a variety of sketches to outline the flow of information
+            and how the pages would be organized. I decided on having a single, long-form page for data entry,
+            with two smaller pages for adding additional details to entries.
+            </p>
+
+    </div>
+  </section> -->
+
+  <section class="content-section bg-light " id="wireframing">
+    <div class="container">
+        <h3 class="text-center">
+          Planning</h3>
+          <p>
+            In the planning stages of our project, our team decided to create mockups of what we wanted our final product to look like.
+            We also agreed to implement embedded YouTube videos and come up with a way to allow users to create and play custom playlists.
+            None of us had any experience with web development, but we chose this project out of the other options because we all
+            wanted to use this skill in the future and were eager to learn. Incidentally, all of the team members played instruments and we
+            shared a love of music, so making Shuffle Buddy was the obvious choice.
+          </p> <br>
+            <div align="center">
+              <embed src="DJ183 Mockup.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" width="50%" height="300px"> <br>
+              <i>Our initial mockups for Shuffle Buddy</i>
+            </div>
+
+
+    </div>
+  </section>
+
+
+  <section class="content-section bg-primary text-white" id="core">
+    <div class="container">
+        <h3 class="text-center">
+          The Core </h3>
+          <p> The initial part of our project involved implementing the back-end of the website and launching our website on <strong>Heroku,</strong>
+            an application hosting site.
+            During this phase of the project, I learned how to use <strong>Git</strong> and <strong>GitHub</strong> to collaborate with my teammates on code. I really liked
+            being able to explain my code contributions and tracking my and my group's progress. <br><br>
+            We used <strong>Flask</strong> and <strong>Jinja</strong> in conjunction to build a dynamic website framework upon which data could be
+            interchanged. I really liked this method of website development because we could build a comprehensive, algorithmic back-end in <strong>Python</strong>
+            while maintaining a flexible and responsive aesthetic on the front-end. <br><br>
+            We utilized the iTunes API and a third-party Billboard Music Charts parser to generate the quiz questions. We used cookies to store
+            the player's score and implemented a "clear score" function.<br><br>
+            One of my favorite parts of this part of the project was discovering tons of new songs!
+          </p><br>
+
+    </div>
+  </div>
+</section>
+  <section class="content-section bg-light" id="reach">
+    <div class="container">
+        <h3 class="text-center">
+          The Reach </h3>
+
+  </section>
+
+  <script>
+    function goBack() {
+    window.history.back();
+  }
+
+  // When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the header
+var header = document.getElementById("myHeader");
+
+// Get the offset position of the navbar
+var sticky = header.offsetTop;
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+if (window.pageYOffset > sticky) {
+  header.classList.add("sticky");
+} else {
+  header.classList.remove("sticky");
+}
+}
+  </script>
