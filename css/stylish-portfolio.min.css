@@ -8,16 +8,25 @@
       height:100%}
 
  body{
-   font-family:'Source Sans Pro'
+   font-family: 'Lato', sans-serif;
+
  }
 
  .btn-xl{padding:1.25rem 2.5rem}
 
- .content-section{padding-top:7.5rem;padding-bottom:7.5rem}
+ .content-section{padding-top:4.0rem;padding-bottom:4.0rem}
 
- .content-section-heading h2{font-size:3rem}.content-section-heading
+ .content-section-heading h2{
+   font-size:3rem;
+  letter-spacing: 1px;}
 
- h3{font-size:1rem;text-transform:uppercase}h1,h2,h3,h4,h5,h6{font-weight:700}
+  .content-section-heading
+
+ h3{
+   font-size:1rem;
+   text-transform:uppercase;
+   letter-spacing: 2px;
+   }h1,h2,h3,h4,h5,h6{font-weight:700}
 
  .text-faded{color:rgba(255,255,255,.7)}
 
@@ -29,11 +38,11 @@
    .map{height:75%}
    }
 
-   .map iframe{
+.map iframe{
      pointer-events:none
      }
 
-     .scroll-to-top{
+.scroll-to-top{
        position:fixed;
        right:15px;
        bottom:15px;
@@ -45,15 +54,18 @@
        background:rgba(52,58,64,.5);
        line-height:45px}
 
-    .scroll-to-top:focus,
-    .scroll-to-top:hover{
-      color:#fff}
-    .scroll-to-top:hover{
-      background:#343a40}
-    .scroll-to-top i{
-      font-weight:800}
+.scroll-to-top:focus, .scroll-to-top:hover{
+      color:#fff
+    }
+.scroll-to-top:hover{
+      background:#343a40
+    }
 
-    .masthead{
+.scroll-to-top i{
+      font-weight:800
+    }
+
+.masthead{
       min-height:30rem;
       position:relative;
       display:table;
@@ -61,13 +73,24 @@
       height:auto;
       padding-top:8rem;
       padding-bottom:8rem;
-      background:-webkit-gradient(linear,left top,right top,from(rgba(255,255,255,.1)),to(rgba(255,255,255,.1))),url(../img/bg-masthead.jpg);
-      background:linear-gradient(90deg,rgba(255,255,255,.1) 0,rgba(255,255,255,.1) 100%),url(../img/bg-masthead.jpg);
+      background: background: rgb(176,212,227); /* Old browsers */
+      background: rgb(207,231,250); /* Old browsers */
+      background: -moz-linear-gradient(top, rgba(207,231,250,1) 0%, rgba(99,147,193,1) 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(top, rgba(207,231,250,1) 0%,rgba(99,147,193,1) 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom, rgba(207,231,250,1) 0%,rgba(99,147,193,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cfe7fa', endColorstr='#6393c1',GradientType=0 ); /* IE6-9 */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b0d4e3', endColorstr='#88bacf',GradientType=0 ); /* IE6-9 */;
+      /* background:-webkit-gradient(linear,left top,right top,from(rgba(255,255,255,.1)),to(rgba(255,255,255,.1))),url(../img/bg-masthead.jpg);
+      background:linear-gradient(90deg,rgba(255,255,255,.1) 0,rgba(255,255,255,.1) 100%),url(../img/bg-masthead.jpg); */
       background-position:center center;background-repeat:no-repeat;background-size:cover}
-      .masthead h1{font-size:4rem;
+.masthead h1{
+  font-size:4rem;
         margin:0;
-        padding:0}
-      @media (min-width:992px){
+        padding:0;
+        letter-spacing: 1px;
+      }
+
+@media (min-width:992px){
           .masthead{
             height:100vh
             }
