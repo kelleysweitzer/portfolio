@@ -20,7 +20,17 @@
 
     <!-- Custom CSS -->
     <link href="css/stylish-portfolio.min.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <style>
+    /* Make the image fully responsive */
+    .carousel-inner img {
+        width: 100%;
+        height: 100%;
+    }
+    </style>
     <style>
 
     .bg1{
@@ -31,7 +41,7 @@
       height: auto;
       padding-top: 9rem;
       padding-bottom: 8rem;
-      background-image: url("img/fodmappalg.jpg");
+      background-image: url("img/poster.jpg");
       background-position: center center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -39,49 +49,6 @@
         background-attachment: fixed;
     }
 
-    .btn-primary {
-
-      transition: 0.3s !important ;
-      border-radius: 10px !important;
-    }
-
-    .btn-secondary {
-      background-color: #ecb807 !important;
-      border-color: #ecb807 !important;
-      color: #000 !important;
-      font-size: 16pt;
-      transition: 0.3s ;
-      border-radius: 10px;
-    }
-
-    .btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
-      background-color: #ba9106 !important;
-      border-color: #ba9106 !important;
-}
-    /* Style the header */
-    .header {
-      padding: 10px 15px;
-      background: #bfbfbf;
-      color: #f1f1f1;
-    }
-
-    /* Page content */
-    .content {
-      padding: 16px;
-    }
-
-    /* The sticky class is added to the header with JS when it reaches its scroll position */
-    .sticky {
-      z-index: 1000;
-      position: fixed;
-      top: 0;
-      width: 100%
-    }
-
-    /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
-    .sticky + .content {
-      padding-top: 102px;
-    }
     </style>
 
 
@@ -101,9 +68,9 @@
     <div class="container text-center text-white">
       <div class="container text-center my-auto">
 
-        <h1 class="mb-1">FODMAPPA</h1><br>
+        <h1 class="mb-1">GRAPHIC DESIGN PORTFOLIO</h1><br>
         <p><font size="5.5">
-          I designed a food tracking app from the logo to the style guide to high-fidelity mockups.
+          I love creating both art and graphics for fun and for class. See some of my work below!
         </p></font>
       </div>
     </div>
@@ -122,73 +89,44 @@
   </section> -->
 
   <section class="content-section bg-light " id="logo">
-    <div class="container">
-        <h3 class="text-center">
-          Logo Design & Initial Style Guide</h3>
-          <p> The goal of this logo was to create a logomark and logotype that would be scalable, readable, and iconic. I also wanted to make the
-            logo food-related, specifically low-FODMAP foods. I made a few sketches to figure out a design.
-          </p>
-          <div align="center">
-          <img src="img/FODMAPPAsketches1.jpg" alt="sketches" height="170">
-          <img src="img/FODMAPPAsketches2.jpg" alt="sketches" height="170">
-          <img src="img/FODMAPPAsketches3.jpg" alt="sketches" height="170"><br><br>
-          I decided to try making a logo based on the carrot icon, so I made several more sketches.<br><br>
-          <img src="img/FODMAPPAsketches4.JPG" alt="sketches" height="200">
-         <br><br>
-        I designed the final logo on Adobe Illustrator using the carrot iconography. I also created a tentative style guide to go along with the logo and
-        potential promotional materials for the company. The final style guide was compiled in a memo for the "client." <br><br>
 
-        <embed src="docs/fodmappainitial.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" width="50%" height="500px"><br>
-        <i>The logo and initial style guide for FODMAPPA.</i>
-      </div>
-    </div>
-  </section>
+    <div id="demo" class="carousel slide" data-ride="carousel">
 
-  <section class="content-section bg-primary  text-white" id="critique">
-    <div class="container">
-        <h3 class="text-center">
-          Competitor Critique </h3>
-          <p> Before making the mockups of the FODMAPPA app, I researched and analyzed a similar competing app, Cara. I wrote a critique of Cara meant to both
-            inform the client of the strengths and weaknesses of competitors and to gain knowledge of what types of UI strategies are effective for the task at hand.
-            I downloaded the app on my phone and used it for a while to get inspiration for my UI mockups.
-          </p><br>
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+      </ul>
 
-          <div align="center">
-            <embed src="docs/fodmappacompetitor.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" width="50%" height="500px">
-            <br><br>
-            <i>An in-depth UX/UI critique of competing app, Cara.</i>
-    </div>
-  </div>
-</section>
-
-  <section class="content-section bg-light" id="mockups">
-    <div class="container">
-        <h3 class="text-center">
-          High Fidelity Mockups & Final Style Guide</h3>
-          <p> Finally, after thoroughly researching my competitor's apps and designing a tentative style guide, I created 8 high-fidelity mockups for FODMAPPA.
-            I used Adobe Illustrator and Adobe Photoshop to create UI elements and develop my final product. One of the most valuable things I learned
-            from this exercise is using a grid system to design an application. It really helped with the alignment and balance of the interface and
-            streamlined the design process. I will certainly be using this strategy in the future since it was incredibly efficient and time-saving.
-          </p>
-          <div class="row">
-            <div class="col-6" align="center">
-                <embed src="docs/fodmappafinal2.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" width="100%" height="500 rem">
-                  <br><i>High-fidelity mockups</i><br>
-                  <a href= "docs/fodmappafinal2.pdf" target=blank download><button class="btn-primary">Download File
-                    <img src= "img/downloading-down-arrow.png" height=12px></button></a>
-                </div>
-            <div class="col-6" align="center">
-            <embed src="docs/fodmappafinal1.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" width="100%" height="500rem">
-                <i>Final style guide</i><br>
-                <a href= "docs/fodmappafinal1.pdf" target=blank download><button class="btn-primary">Download File
-                   <img src= "img/downloading-down-arrow.png" height=12px></button></a>
-
-            </div>
+      <!-- The slideshow -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/bg-callout.jpg" alt="Los Angeles">
+          <div class="carousel-caption">
+            <h3>Chicago</h3>
+              <p>Thank you, Chicago!</p>
           </div>
-
+        </div>
+        <div class="carousel-item">
+          <img src="img/fodmappa.jpg" alt="Chicago">
+        </div>
+        <div class="carousel-item">
+          <img src="img/poster.jpg" alt="New York">
+        </div>
       </div>
+
+      <!-- Left and right controls -->
+      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+
     </div>
   </section>
+
 
   <script>
     function goBack() {
